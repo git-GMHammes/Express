@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <title>User List</title>
+</head>
+
+<body>
+    <div class="container">
+        &nbsp;
+    </div>
+    <div class="container">
+        <div class="card text-dark bg-light mb-12">
+            <div class="card-header">
+                <h1>Lista de Usuários</h1>
+            </div>
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for (let user of users) { %>
+                            <tr>
+                                <td>
+                                    <%= user.name %>
+                                </td>
+                                <td>
+                                    <%= user.email %>
+                                </td>
+                                <td>
+                                    <%= user.password %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>&ensp;</th>
+                            <th>&ensp;</th>
+                            <th>&ensp;</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <a class="btn btn-outline-secondary" href="/" role="button">Painel de Controle</a>
+            </div>
+            <div class="card-footer text-muted">
+                <div class="d-flex justify-content-end">
+                    <small id="emailHelp" class="form-text text-muted">
+                        Sistema desenvolvido com tecnologia
+                        Node.JS.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

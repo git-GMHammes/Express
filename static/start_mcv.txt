@@ -1,0 +1,15 @@
+mkdir views
+mkdir controllers
+mkdir models
+cd views
+vi index.ejs
+vi user.ejs
+cd ..
+cd controllers
+vi indexController.js
+vi userController.js
+cd ..
+cd models
+vi user.js
+cd ..
+pwd

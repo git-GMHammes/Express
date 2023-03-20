@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+  <title>Sign up</title>
+</head>
+
+<body>
+  <div class="container">
+    &nbsp;
+  </div>
+  <div class="container">
+    <div class="card text-dark bg-light mb-12">
+      <div class="card-header">
+        <h1>Sign up</h1>
+      </div>
+      <div class="card-body">
+        <div class="d-flex justify-content-center">
+          <h5 class="card-title">Cadastro de Usuário</h5>
+        </div>
+        <div class="container">
+          <form class="was-validated" method="POST" action="/user/create">
+            <div class="col-md-12">
+              <label for="name" class="form-label">Nome</label>
+              <input type="text" class="form-control is-valid" id="name" name="name" value="" required>
+            </div>
+            <div class="col-md-12">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="text" class="form-control is-valid" id="email" name="email" value="" required>
+            </div>
+            <div class="col-md-12">
+              <label for="password" class="form-label">Password</label>
+              <input type="text" class="form-control is-valid" id="password" name="password" value="" required>
+            </div>
+            <div class="container">
+              &nbsp;
+            </div>
+            <input class="btn btn-outline-secondary" type="submit" value="Enviar"> &nbsp;
+            <a class="btn btn-outline-secondary" href="/" role="button">Painel de Controle</a>
+            <div class="container">
+              &nbsp;
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        <div class="d-flex justify-content-end">
+          <small id="emailHelp" class="form-text text-muted">
+            Sistema desenvolvido com tecnologia
+            Node.JS.
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
